@@ -1,0 +1,162 @@
+body{
+	background-image: url(../img/bg-1.jpg);
+	background-repeat: no-repeat ;
+	background-size: 100% 100%;
+	font-family: "楷体";
+}
+
+a:link{
+	color: #7F7F7F;
+}
+
+#container .left-nav{
+	width: 18%;
+    height: 542px;
+    overflow: auto;
+	background-color: rgba(245,245,245,0.8);
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#container .left-nav .left-nav-list{
+	width: 100%;
+	margin: 0;
+	margin-top: 30px;
+	padding: 0;
+}
+
+#container .left-nav .left-nav-list .left-nav-item a{
+	width: 100%;
+	height: 50px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(245,245,245);
+	border-bottom: 1px solid darkgray;
+	font-size: 20px;
+	line-height: 50px;
+	text-decoration: none;	
+}
+
+#container .left-nav .left-nav-list .left-nav-item .selected{
+	background: #4CAF50 url(../img/arrow.png) no-repeat right ;
+	color: white;
+}
+
+#container .left-nav .left-nav-list .left-nav-item a:hover:not(.selected){
+	background-color: #666;
+	color: white;
+}
+
+#container .left-nav .left-nav-list .left-nav-item a .image{
+	display: inline-block;
+	height: 30px;
+	padding: 0;
+	margin-top: 8px;
+	margin-left: 20px;
+}
+
+
+
+#container .content{
+	width: 82%;
+	height: 100%;
+	float: left;
+}
+
+#container .content .photo{
+	width: 32%;
+	height: 60%;
+	padding-top: 2px;
+	float: left;
+	font-family: Georgia;
+}
+
+#container .content .photo .myphoto{
+	width: 200px;
+	height: 260px;
+	margin: auto;
+	border-radius: 20px 50px;
+	background: url(../img/photo.jpg) no-repeat center;
+}
+
+
+#container .content .description{
+	width: 60%;
+	height: 80%;
+	float: left;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.5);
+	border: 2px dashed #D3D3D3;
+	border-radius: 50px 20px;
+	
+}
+
+table{
+	background-color: none;
+	line-height: 30px;
+	padding: 10px;
+}
+
+tr{
+	height: 30px;
+}
+
+th{
+	text-align: left;
+	text-decoration: underline;
+}
+
+.table-1,.table-3{
+	float: left; 
+	width: 32%;	
+}
+
+.table-2,.table-4{
+	float: left;
+	padding-left: 30px;
+	width: 68%;
+	border-left: 1px dashed #D3D3D3;
+}
+
+.table-3,.table-4{
+	
+	border-top: 1px dashed #D3D3D3;
+}
+
+#container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#container .content:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* 响应式布局 - 屏幕尺寸小于 900px 时，布局改为上下布局 */
+@media screen and (max-width: 900px) {
+#container,#container .content{
+	height: 100%;
+	overflow: auto;
+}
+
+#container .content .photo, #container .content .description {   
+    width: 100%;
+	margin-bottom: 20px;
+  }
+  
+#container .content .description table{
+	width: 80%;
+	margin: 0;
+    padding: 0;
+	border-bottom: 1px dotted #808080;
+}
+
+#container .left-nav .left-nav-list .left-nav-item a .image{
+	margin-left: 0px;
+}
+}

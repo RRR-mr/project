@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人网站</title>
+		<link type="text/css" rel="stylesheet" href="css/index.css" />
+		<link type="text/css" rel="stylesheet" href="css/contact.css" />
+		<script src="js/methods.js"></script>
+	</head>
+	<body>
+
+		<div id="header">
+			<div id="nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html">
+							<div class="img">
+								<img class="image" src="img/home.png">
+							</div>
+							<div class="name"><span>首 页</span></div>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="me.html">
+							<div class="img">
+								<img class="image" src="img/me.png">
+							</div>
+							<div class="name"><span>关于我</span></div>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="works.html">
+							<div class="img">
+								<img class="image" src="img/project.png">
+							</div>
+							<div class="name"><span>我的作品</span></div>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="selected">
+							<div class="img">
+								<img class="image" src="img/contact.png">
+							</div>
+							<div class="name"><span>联系方式</span></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="container">
+
+			<div class="title">
+				<h2>———<br>——— CONTACT ———</h2>
+			</div>
+			<div class="content">
+				<table>
+					<tr>
+						<td class="lable">姓名：</td>
+						<td>张美如</td>
+					</tr>
+					<tr>
+						<td class="lable">微信：</td>
+						<td>zhang2577148912</td>
+					</tr>
+					<tr>
+						<td class="lable">QQ：</td>
+						<td>2577148912</td>
+					</tr>
+					<tr>
+						<td class="lable">电话：</td>
+						<td>18162506396</td>
+					</tr>
+					<tr>
+						<td class="lable">邮箱：</td>
+						<td>18162506396@163.com</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="lable"><button class="btn" onclick="leavemessage()">留 言</button></td>
+					</tr>
+				</table>
+			</div>
+			<div id="popbox">
+				<div class="close">
+					<span>留言簿</span>
+					<a href="javascript:void(0)" onclick="closeBox()"><img src="img/close.png"></a>
+				</div>
+				<div class="messagebox">
+					<form  >
+						<table class="message">
+							<tr>
+								<td  class="mess-title">* 你想对我说什么呢？</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<textarea rows="7" name="text"></textarea>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="lable"><button type="submit" value="提交" class="btn-submit">提 交</button></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+
+		</div>
+		<div id="footer">
+			<p>如果你知道自己要去哪里 ，那么全世界都会为你让路</p>
+		</div>
+	</body>
+</html>
