@@ -7,9 +7,12 @@
 		<link type="text/css" rel="stylesheet" href="css/me.css" />
 	</head>
 	<body>
-
+		<!-- 页眉区 header -->
+		<!-- 页眉区中包括背景图片logo和导航区nav -->
 		<div id="header">
+			<!-- 导航区 nav-->
 			<div id="nav">
+				<!-- 使用无序列表-->
 				<ul class="nav-list">
 					<li class="nav-item">
 						<a href="index.html">
@@ -46,7 +49,11 @@
 				</ul>
 			</div>
 		</div>
+		<!-- end of header -->
+
+		<!-- 内容区 container 内部分为left-nav侧边导航栏和content内容两部分-->
 		<div id="container">
+			<!-- 内容区1 left-nav 侧边导航栏 -->
 			<div class="left-nav">
 				<ul class="left-nav-list">
 					<li class="left-nav-item">
@@ -65,76 +72,86 @@
 					</li>
 				</ul>
 			</div>
+			<!-- end of left-nav -->
+			<!-- 内容区2 content 页面内容 内部又分为两个部分title和content-details -->
 			<div class="content">
+				<!-- 内容区2-1 页面标题 title --> 
 				<div class="title">
 					<h2>———<br>——— ME ———</h2>
 				</div>
-				<div class="photo">
-					<div><h2 style="text-align: center;">Photo:</h2></div>
-					<div class="myphoto">
-						
+				<!-- 内容区2-2 页面详情 content-details 内部分为两个部分photo和description-->
+				<div class="content-details">
+					<!-- 内容区2-2-1 个人照片 photo -->
+					<div class="photo">			
+						<h2 >Photo:</h2>
+                        <img src="img/photo.jpg" class="myphoto">						
 					</div>
+					<!-- 内容区2-2-2 个人介绍 description -->
+					<div class="description">
+						<table class="table-1">
+							<tr>
+								<th colspan="2"><i>基本信息</i></th>
+							</tr>
+							<tr>
+								<td>姓名</td>
+								<td>张美如</td>
+							</tr>
+							<tr>
+								<td>性别</td>
+								<td>女</td>
+							</tr>
+							<tr>
+								<td>出生日期</td>
+								<td>1999-04-09</td>
+							</tr>
+						</table>
+						<table class="table-2">
+							<tr>
+								<th colspan="2"><i>教育背景</i></th>
+							</tr>
+							<tr>
+								<td>就读学校</td>
+								<td>中南财经政法大学</td>
+							</tr>
+							<tr>
+								<td>就读学院</td>
+								<td>信息与安全工程学院</td>
+							</tr>
+							<tr>
+								<td>就读专业</td>
+								<td>信息管理与信息系统（金融信息工程方向）</td>
+							</tr>
+						</table>
+						<table class="table-3">
+							<tr>
+								<th class="thead"><i>专业技能</i></th>
+							</tr>
+							<tr>
+								<td>熟悉C++、java语言<br>熟悉JSP，Servlet，JavaBean等J2EE的核心技术。</td>
+							</tr>
+						</table>
+						<table class="table-4">
+							<tr>
+								<th class="thead"><i>自我评价</i></th>
+							</tr>
+							<tr>
+								<td>本人性格沉稳，待人友好；对待工作认真负责，积极进取，吃苦耐劳，适应能力强，勇于接受新的挑战；
+									并且勤于学习，不断提升自身的能力与综合素质；脚踏实地，有良好的团队精神。</td>
+							</tr>
+						</table>
+					</div>
+				    <!-- end of description -->
 				</div>
-				<div class="description">
-					<table class="table-1">
-						<tr>
-							<th><i>基本信息</i></th>
-						</tr>
-						<tr>
-							<td>姓名</td>
-							<td>张美如</td>
-						</tr>
-						<tr>
-							<td>性别</td>
-							<td>女</td>
-						</tr>
-						<tr>
-							<td>出生日期</td>
-							<td>1999-04-09</td>
-						</tr>
-						
-					</table>
-					<table class="table-2">
-						<tr>
-							<th><i>教育背景</i></th>
-						</tr>
-						<tr>
-							<td>就读学校</td>
-							<td>中南财经政法大学</td>
-						</tr>
-						<tr>
-							<td>就读学院</td>
-							<td>信息与安全工程学院</td>
-						</tr>
-						<tr>
-							<td>就读专业</td>
-							<td>信息管理与信息系统（金融信息工程方向）</td>
-						</tr>
-					
-					</table>
-					<table class="table-3">
-						<tr>
-							<th class="thead"><i>专业技能</i></th>							
-						</tr>
-						<tr>
-							<td>熟悉C++、java语言<br>熟悉JSP，Servlet，JavaBean等J2EE的核心技术。</td>							
-						</tr>						
-					</table>
-					<table class="table-4">
-						<tr>
-							<th class="thead"><i>自我评价</i></th>
-						</tr>
-						<tr>
-							<td>本人性格沉稳，待人友好；对待工作认真负责，积极进取，吃苦耐劳，适应能力强，勇于接受新的挑战；
-							并且勤于学习，不断提升自身的能力与综合素质；脚踏实地，有良好的团队精神。</td>	
-						</tr>						
-					</table>
-				</div>
+                <!-- end of content-details -->
 			</div>
-
+            <!-- end of content -->
 		</div>
+		<!-- end of container -->
+		
+		<!-- 页脚区 footer -->
 		<div id="footer">
 			<p>如果你知道自己要去哪里 ，那么全世界都会为你让路</p>
 		</div>
+		<!-- end of footer -->
 	</body>
 </html>

@@ -66,8 +66,7 @@ td {
 
 #popbox .close {
 	text-align: center;
-	padding: 10px 30px;
-	
+	padding: 10px 30px;	
 	background-color: #7F7F7F;
 }
 
@@ -77,6 +76,7 @@ td {
 	line-height: 22px;
 	color: white;
 }
+
 /*关闭按钮*/
 #popbox .close a {
 	float: right;
@@ -98,6 +98,7 @@ td {
 	color: white;
 	padding-left: 10px;
 }
+
 p{
 	margin-bottom: 0;
 }
@@ -126,17 +127,11 @@ textarea{
 
 button:focus{outline:0;}
 
-/* 响应式布局 -屏幕尺寸小于 900px 时，导航改为上下布局 */
+/* 响应式布局 -屏幕尺寸小于 900px 时，表格变大 */
 @media screen and (max-width: 900px) {
 #container .content, table{
 	width: 90%;
 	margin: 0 auto;
 } 
-
-#container #popbox{
-	position: absolute;
-	top: 50%;
-	width: 90%;
-}
   
 }

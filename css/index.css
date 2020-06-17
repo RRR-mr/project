@@ -1,6 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
+	height: 100%;
 	background-image: url(../img/bg.jpg);
 	background-repeat: no-repeat ;
 	background-size: 100% 100%;
@@ -15,23 +16,22 @@ ul{
 
 /*布局设置*/
 
-#header{
+#header{            /*页眉区(内含导航区)*/
 	width: 100%;
-	background: #808080 url(../img/logo.jpg) no-repeat  left ;
+	background: #808080 url(../img/logo.jpg) no-repeat  left ; /*设置logo为背景图片*/
 	margin: 0;
 	border-bottom: 0.5px solid #666666;
 }
 
-#container{
+#container{         /*内容区*/
 	width: 100%;
-    min-height: 542px;
+	min-height: 542px; /*最小高度为542px*/
 	margin: 0;
-    
+    position: relative; /*设置为相对定位*/
 }
 
-#footer{
-	width: 100%;
-	
+#footer{            /*页脚区*/
+	width: 100%;	
 	margin: 0;
 	padding: 6px 0;
 	background-color: rgba(245,245,245,0.8);
@@ -98,6 +98,7 @@ ul{
 	font-weight: normal;
 }
 
+/*鼠标悬停和选中后的样式*/
 .nav-item a:hover,.nav-item .selected{
 	background-color: #444444;
 	color: white;
@@ -105,46 +106,34 @@ ul{
 	border-right: 0.5px  solid #333333;
 }
 
-.nav-item .selected .name span,.nav-item a:hover .name span{
+.nav-item a:hover .name span,.nav-item .selected .name span{
 	font-weight: bold
 }
 
-/* 响应式布局 -屏幕尺寸小于 850px 时，导航改为上下布局 */
-@media screen and (max-width: 850px) {
-.nav,.nav-item{
-    float: none;
-    width: 100%;
-  }
-.nav-item a{
-    float: none;
-    width: 100%;
-	text-align: center;
-  }  
-  
-}
 
 /*内容区设置*/
+
+/*页面标题*/
 #container .title{   
 	width: 50%;
 	margin: 0 auto;
-	padding: 5px;
+	padding: 3px;
 	text-align: center;
 	font-family:"mv boli";
 }
 
-#container .content{
+/*页面内容区*/
+#container .content{  
 	width: 100%;
 	margin: 0;
 }
-#container .content .zhanwei{
-	width: 24%;
-	height: 200px;
-	float: left;
-}
-#container .content .content-text{
+
+ /*内容区1*/
+#container .content .content-text{ 
 	width: 52%;
 	text-align: center;
 	float: left;
+	margin-left: 24%;
 }
 
 #container .content .content-text .t1{
@@ -165,7 +154,8 @@ ul{
 	padding-left: 45px;
 }
 
-#container .content .start{
+/*内容区2*/
+#container .content .start{  
 	width: 24%;
 	float: left;
 	text-align: center;
@@ -183,6 +173,7 @@ ul{
 	margin-top: 25px;
 }
 
+/*列后清除浮动*/
 .content:after{
 	content: "";
 	display: table;
@@ -195,4 +186,17 @@ ul{
 	padding-top: 8px;
 	font-family: "楷体";
 	font-size: 18px;
+}
+
+/* 响应式布局 -屏幕尺寸小于 850px 时，导航改为上下布局 */
+@media screen and (max-width: 850px) {
+.nav-item{
+    float: none;
+    width: 100%;
+  }
+.nav-item a{
+    width: 100%;
+	text-align: center;
+  }  
+  
 }

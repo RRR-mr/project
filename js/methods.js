@@ -12,8 +12,7 @@ function closeBox() {
 	popBox.style.display = "none";
 }
 
-
-
+/*works页面加载函数*/
 function onPageLoaded() {
    
  //第一个轮播图
@@ -32,8 +31,7 @@ function onPageLoaded() {
 
 	var timer = 0;
 
-	//给 s1 设置宽，高，以及overflow:hidder
-	
+	//给 s1 设置宽，高	
 	s1.style.width = img1.offsetWidth + "px";
 	s1.style.height = img1.offsetHeight + "px";
 	console.log(s1.style.width)
@@ -42,7 +40,6 @@ function onPageLoaded() {
 	banner1.style.height = img1.offsetHeight + "px";
 	banner1.style.width = img1.offsetWidth * li1.length + "px";
 	banner1.style.left = "-600px";
-
 
 
 	//轮播图
@@ -137,8 +134,7 @@ function onPageLoaded() {
 
 	var timer2 = 0;
 
-	//给 s2 设置宽，高
-	
+	//给 s2 设置宽，高	
 	s2.style.width = img2.offsetWidth + "px";
 	s2.style.height = img2.offsetHeight + "px";
 	console.log(s2.style.width)
@@ -147,7 +143,6 @@ function onPageLoaded() {
 	banner2.style.height = img2.offsetHeight + "px";
 	banner2.style.width = img2.offsetWidth * li2.length + "px";
 	banner2.style.left = "-500px";
-
 
 
 	//轮播图

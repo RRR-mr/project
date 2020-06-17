@@ -1,5 +1,6 @@
-.content-details{
-	width: 80%;
+/*内容区2-2 页面详情*/
+#container .content .content-details{
+	width: 85%;
 	margin: 0 auto;
 	padding-top: 0;
 	background-color: rgba(255,255,255,0.5);
@@ -7,38 +8,43 @@
 
 .content-details .left{
 	width: 50%;
-	float: left;
+	float: left; /*浮动布局*/
 }
 
 .content-details .right{
 	width: 50%;
-	float: left;
+	float: left;/*浮动布局*/
 }
 
+/*设置歌曲信息*/
 .music{
 	width: 90%;
 	margin: 0 auto;
 	padding-top: 15px;
 	text-align: center;
 }
-.music-image{
+
+.music .music-image{
 	width: 23%;
 	float: left;
 	border-radius: 50px;
 }
-.music-name{
+
+.music .music-name{
 	width: 76%;
 	float: left;
 	text-align: center;
 }
 
-.music-name span{
+.music .music-name span{
 	display: block;
 	margin: 5px auto;
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: bold;
 }
+
+/*设置音频*/
 audio{
 	width: 100%;
 	height: 50px;
@@ -48,9 +54,9 @@ audio{
 
 audio:focus{outline:0;}
 	
-
+/*设置歌词*/
 .geci{
-	clear: both;
+	clear: both;  /*清除浮动*/
 	width: 90%;	
 	height: 250px;
 	overflow: auto;
@@ -61,8 +67,8 @@ audio:focus{outline:0;}
 	line-height: 30px;
 }
 
-/* 响应式布局 -屏幕尺寸小于 1000px 时，导航改为上下布局 */
-@media screen and (max-width: 1000px) {
+/* 响应式布局 -屏幕尺寸小于 900px 时，导航改为上下布局 */
+@media screen and (max-width: 900px) {
 .content-details .left,.content-details .right{
     float: none;
     width: 100%;

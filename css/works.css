@@ -4,9 +4,11 @@ body{
 	background-size: 100% 100%;
 	font-family: "楷体";
 }
+
 .content{
 	background-color: rgba(255,255,255,0.5);
 }
+
 .left{
 	width: 60%;
 	height: 100%;
@@ -20,8 +22,21 @@ body{
 	padding-bottom: 20px;
 }
 
-.right #s2{
+.right .project2{
+	width: 100%;
+}
+/*右边内容区轮播图*/
+.right .project2 #s2{
 	float: left;
+}
+
+/*右边内容区项目介绍*/
+.right .project2 .project-info{
+	float: left;
+	width: 40%;
+	margin: 0;
+	padding: 0;
+	margin-left: 20px;
 }
 
 p,h4{
@@ -35,17 +50,7 @@ p{
 	text-indent: 2em;
 }
 
-.right .project-info{
-	float: left;
-	width: 40%;
-	margin: 0;
-	padding: 0;
-	margin-left: 20px;
-}
 
-.project2{
-	width: 100%;
-}
 
 .content:after,.project2:after{
 	content: "";
@@ -53,12 +58,12 @@ p{
 	clear: both;
 }
 
+/*轮播图*/
 /*设置父元素定位*/
 #s1,#s2{
 	margin: 0 auto;
     position: relative; /*为了给左右按钮 和小圆点*/
-	overflow: hidden;
-	
+	overflow: hidden;	
 }
 
 #s2{
@@ -122,7 +127,7 @@ p{
     background: orangered;
 }
 
-/*左右按钮*/
+/*左右箭头*/
 .arrow{
     cursor: pointer;
     display: none;  /*设置暂时不显示*/
@@ -134,7 +139,7 @@ p{
     width: 40px;
     height: 40px;
     position: absolute;
-    z-index: 300;
+    z-index: 200;
     top: 45%;
     background: RGBA(0,0,0,0.3);  /*背景透明度*/
     color: #fff;
@@ -152,26 +157,33 @@ p{
      display: block;
 }
 
+/*响应式布局*/
 @media screen and (max-width: 1200px) {
 #container .content .left,#container .content .right{
-	width: 100%;
+	width: 80%;
+	float: none;
+	margin: 0 auto;
 	overflow: auto;
 }
 
 .project-info{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.right .project2{
 	width: 80%;
 	margin: 0 auto;
 }
 
-#s2{
-	margin:auto;
-}
 
-.project2{
-	width: 80%;
-	margin: 0 auto;
-}
 
+
+
+.right .project2 .project-info{
+	width: 50%;
+	float: right;
+}
 
 }
 

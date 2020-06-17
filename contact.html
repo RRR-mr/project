@@ -5,12 +5,15 @@
 		<title>个人网站</title>
 		<link type="text/css" rel="stylesheet" href="css/index.css" />
 		<link type="text/css" rel="stylesheet" href="css/contact.css" />
-		<script src="js/methods.js"></script>
+		<script type="text/javascript" src="js/methods.js"></script>
 	</head>
 	<body>
-
+		<!-- 页眉区 header -->
+		<!-- 页眉区中包括背景图片logo和导航区nav -->
 		<div id="header">
+			<!-- 导航区 nav-->
 			<div id="nav">
+				<!-- 使用无序列表-->
 				<ul class="nav-list">
 					<li class="nav-item">
 						<a href="index.html">
@@ -47,11 +50,14 @@
 				</ul>
 			</div>
 		</div>
+		<!-- end of header -->
+		<!-- 内容区 container 内容分为title和content和popbox三部分-->
 		<div id="container">
-
+			<!--内容区1  页面标题 title -->
 			<div class="title">
 				<h2>———<br>——— CONTACT ———</h2>
 			</div>
+			<!--内容区2 页面中的具体内容 content -->
 			<div class="content">
 				<table>
 					<tr>
@@ -79,13 +85,17 @@
 					</tr>
 				</table>
 			</div>
+			<!-- end of content -->
+			<!--内容区3 弹出的留言框 popbox 内容分为close和messagebox-->
 			<div id="popbox">
+				<!--内容区3-1 close-->
 				<div class="close">
 					<span>留言簿</span>
 					<a href="javascript:void(0)" onclick="closeBox()"><img src="img/close.png"></a>
 				</div>
+				<!--内容区3-2 messagebox-->
 				<div class="messagebox">
-					<form  >
+					<form>
 						<table class="message">
 							<tr>
 								<td  class="mess-title">* 你想对我说什么呢？</td>
@@ -104,10 +114,14 @@
 					</form>
 				</div>
 			</div>
-
+            <!-- end of popbox -->
 		</div>
+		<!-- end of container -->
+
+		<!-- 页脚区 footer -->
 		<div id="footer">
 			<p>如果你知道自己要去哪里 ，那么全世界都会为你让路</p>
 		</div>
+		<!-- end of footer -->
 	</body>
 </html>

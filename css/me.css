@@ -9,14 +9,14 @@ a:link{
 	color: #7F7F7F;
 }
 
+/*内容区1 侧边导航栏*/
 #container .left-nav{
 	width: 18%;
-    height: 542px;
-    overflow: auto;
+    height: 100%;
 	background-color: rgba(245,245,245,0.8);
 	margin: 0;
 	padding: 0;
-	float: left;
+	position: absolute;  /*相当于container父元素绝对定位*/
 }
 
 #container .left-nav .left-nav-list{
@@ -57,33 +57,39 @@ a:link{
 	margin-left: 20px;
 }
 
-
+/*内容区2 页面内容 content*/
 
 #container .content{
 	width: 82%;
 	height: 100%;
-	float: left;
+	margin-left: 18%;
 }
 
-#container .content .photo{
+#container .content .content-details{
+	width: 100%;
+}
+
+/*个人照片 photo*/
+#container .content-details .photo{
 	width: 32%;
 	height: 60%;
+	text-align: center;
 	padding-top: 2px;
 	float: left;
 	font-family: Georgia;
 }
 
-#container .content .photo .myphoto{
+#container .content-details .photo .myphoto{
 	width: 200px;
 	height: 260px;
 	margin: auto;
 	border-radius: 20px 50px;
-	background: url(../img/photo.jpg) no-repeat center;
 }
 
-
-#container .content .description{
+/*详细个人介绍 description*/
+#container .content-details .description{
 	width: 60%;
+	margin: 0;
 	height: 80%;
 	float: left;
 	padding: 20px;
@@ -96,7 +102,8 @@ a:link{
 table{
 	background-color: none;
 	line-height: 30px;
-	padding: 10px;
+	padding: 5px;
+	border-spacing: 0;
 }
 
 tr{
@@ -110,53 +117,48 @@ th{
 
 .table-1,.table-3{
 	float: left; 
-	width: 32%;	
+	width: 30%;	
 }
 
 .table-2,.table-4{
 	float: left;
-	padding-left: 30px;
-	width: 68%;
+	padding-left: 3%;
+	width: 70%;
 	border-left: 1px dashed #D3D3D3;
 }
 
-.table-3,.table-4{
-	
+.table-3,.table-4{	
 	border-top: 1px dashed #D3D3D3;
 }
 
-#container:after {
+/*列后清除浮动*/
+#container .content .content-details:after ,#container .content .content-details .description:after{
   content: "";
   display: table;
   clear: both;
 }
 
-#container .content:after{
-	content: "";
-	display: table;
-	clear: both;
-}
 
-/* 响应式布局 - 屏幕尺寸小于 900px 时，布局改为上下布局 */
-@media screen and (max-width: 900px) {
-#container,#container .content{
-	height: 100%;
-	overflow: auto;
-}
+/* 响应式布局 - 屏幕尺寸小于 1150px 时，布局改为上下布局 */
+@media screen and (max-width: 1150px) {
 
 #container .content .photo, #container .content .description {   
-    width: 100%;
+    float: none;
+	width: 80%;
+	margin: 0 auto;
 	margin-bottom: 20px;
   }
   
 #container .content .description table{
-	width: 80%;
-	margin: 0;
-    padding: 0;
+	width: 90%;
+	float: none;
+	margin: 0 auto;
+	padding: 10px;
 	border-bottom: 1px dotted #808080;
+	border-left: none;
 }
 
 #container .left-nav .left-nav-list .left-nav-item a .image{
-	margin-left: 0px;
+	margin-left: 2px;
 }
 }
